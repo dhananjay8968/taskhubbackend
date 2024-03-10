@@ -1,8 +1,3 @@
 // Connect to the database using Sequelize
 import { Sequelize } from "sequelize";
-export const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
-    host: process.env.DB_HOST,
-    port: process.env.DB_PORT,
-    dialect: 'postgres',
-    ssl: true
-});
+export const sequelize = new Sequelize('postgres://postgresuser:D1q3BLHMHYfrgZhwoGzLMvQc9Pf4u0Gv@dpg-cnmrauuv3ddc73flfbsg-a.singapore-postgres.render.com/taskhub_9evw?ssl=true');
